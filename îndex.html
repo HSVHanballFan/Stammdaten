@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="utf-8">
+  <title>StammdatenApp</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root>
+    <h1>Stammdatenbank</h1>
+    <table class="table-bordered">
+      <thead>
+      <tr style="background-color: lightslategray">
+        <th scope="col">ID</th>
+        <th scope="col">Vorname</th>
+        <th scope="col">Nachname</th>
+        <th scope="col">IBAN 1</th>
+        <th scope="col">IBAN 2</th>
+        <th scope="col">IBAN 3</th>
+        <th scope="col">IBAN löschen</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr style="background-color: lightsteelblue" >
+        <th scope="row">1</th>
+        <td>Otto</td>
+        <td>Müller</td>
+        <td>DE12 200204775412738466</td>
+        <td>keine</td>
+        <td>keine</td>
+        <td><label><input type="checkbox" name="ch1" value="true"></label></td>
+      </tr>
+      <tr style="background-color: lightsteelblue">
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Schmidt</td>
+        <td>DE12 200204775412738466</td>
+        <td>keine</td>
+        <td>keine</td>
+        <td><label><input type="checkbox" name="ch1" value="true"></label></td>
+      </tr>
+      <tr style="background-color: lightsteelblue">
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Schmidt</td>
+        <td>keine</td>
+        <td>DE12 200204775412738460</td>
+        <td>keine</td>
+        <td><label><input type="checkbox" name="ch1" value="true"></label></td>
+      </tr>
+      <tr style="background-color: lightsteelblue">
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>Meier</td>
+        <td>DE12 200204774444738466</td>
+        <td>keine</td>
+        <td>keine</td>
+        <td><label><input type="checkbox" name="ch1" value="true"></label></td>
+      </tr>
+      <tr style="background-color: lightsteelblue">
+        <th scope="row">3</th>
+        <td>Larry</td>
+        <td>Meier</td>
+        <td>keine</td>
+        <td>DE12 200204773412738460</td>
+        <td>keine</td>
+        <td><label><input type="checkbox" name="ch1" style="align-items: center" value="true"></label></td>
+      </tr>
+      </tbody>
+    </table>
+  <p class="abstand"></p>
+  <div>
+    <span>Bitte geben Sie eine neue IBAN ein:</span>
+    <input type="text" title="neueIBAN">
+  </div>
+  <p class="abstand2"></p>
+  <div>
+    <label class="label1" style="color:lightcoral">IBAN hinzufügen<output></output></label>
+    <button type="submit" class="hinzufügen">IBAN hinzufügen</button>
+    <label class="label2" style="color:lightcoral">IBAN löschen<output></output></label>
+    <button type="submit" id="btn2">IBAN löschen</button>
+    </div>
+</app-root>
+</body>
+</html>
