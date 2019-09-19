@@ -1,0 +1,8 @@
+Aufgabe: Kundenverwaltung
+Implementieren Sie eine Webanwendung um Kunden und deren Bankdaten (IBAN) zu verwalten (CRUD). Erforderliche Felder sind Vorname, Nachname und IBAN. Die Daten sollten validiert werden. Kunden können mehrere Konten haben, die IBAN muss aber eindeutig sein.
+1.	Es sollte eine Ansicht geben, in der alle angelegten Kunden tabellarisch aufgelistet werden.
+2. 	Administratoren sollen über die Oberfläche in der Lage sein neue Kunden anzulegen, zu aktualisieren und zu löschen
+3.	Beschränken Sie die das Ändern und Löschen eines Kunden auf den Administrator, der den Kunden initial angelegt hat.
+4. 	Verwenden Sie PostgreSQL 11.x, Hibernate 5.1 und Angular 8 für die Implementation. Es steht Ihnen offen, weitere Apps, Frameworks & u.Ä. einzusetzen, von denen Sie glauben, dass sie hier von Nutzen sind.
+5. 	Erstellen Sie Unittests für Ihre Implementation
+6. 	Schreiben Sie eine kurze Dokumentation zum Einrichten, Ausführen und Verwenden Ihrer Implementierung
