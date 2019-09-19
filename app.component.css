@@ -1,0 +1,14 @@
+.table-bordered {
+  text-align: center;
+  border-collapse: collapse;
+  border-bottom-color: black;
+}
+.th, .td {
+  text-align: right;
+}
+.abstand{
+  margin:200px 3px 4px 5px;
+}
+.abstand2{
+  margin:50px 3px 4px 5px;
+}
