@@ -1,0 +1,83 @@
+package stammdatenPackage;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import stammdatenPackage.Person;
+
+public class Personen {
+   
+   private List<Person> personen = new ArrayList<Person>();
+   
+   public Personen () {
+       
+   }
+   public List<Person> getPersonen() {
+       if(!personen.isEmpty()) {
+       return personen;
+       }
+       System.out.println("Keine Personen vorhanden!");
+       return null;
+   }
+   
+   public void addPerson(Person person) {
+       personen.add(person);
+       System.out.println("Person " + person.getVorname() + " hinzugefügt!");
+   }
+   public void removePerson(Person person) {
+       
+       personen.remove(person);
+       System.out.println("Person " + person.getVorname() + " entfernt!");
+       
+   }
+   
+   public List<Person> getPersonByWohnort(String wohnort) {
+       List<Person> fWohnort = new ArrayList<Person>();
+       for(Person person : personen) {
+            if(person.getWohnort().equals(wohnort)) {
+               
+               fWohnort.add(person);
+               
+               }  
+                 
+        }
+        if (fWohnort.isEmpty()) {
+           return null;
+        }
+       return fWohnort;
+   }
+   
+   public List<Person> getPersonByNachname(String nachname) {
+       List<Person> fNachname = new ArrayList<Person>();
+       for(Person person : personen) {
+            if(person.getNachname().equals(nachname)) {
+             
+               fNachname.add(person);
+               
+               }  
+                   
+        }
+        if (fNachname.isEmpty()) {
+               return null;
+           }
+       return fNachname;  
+       
+   }
+   
+   public List<Person> getPersonByVorname(String vorname) {
+       List<Person> fVorname = new ArrayList<Person>();
+       for(Person person : personen) {
+            if(person.getVorname().equals(vorname)) {
+             
+               fVorname.add(person);
+               
+               }  
+                 
+        }
+        if (fVorname.isEmpty()) {
+               return null;
+           }
+       return fVorname;
+       
+   }
+}
