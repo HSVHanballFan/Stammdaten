@@ -1,6 +1,6 @@
 package stammdatenPackage;
 
-public class Personen {
+public class Person {
     private String vorname;
     private String nachname;
     private String wohnort;
